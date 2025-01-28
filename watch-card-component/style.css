@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(157, 199, 213);
+}
+
+main{
+    max-width: 456px;
+    margin: 80px auto;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.watch-img{
+    background-image: url("./img.png");
+    height: 20em;
+    background-size: cover;
+    background-position: 60% center;
+    position: relative;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.watch-img span{
+    background-color: bisque;
+    padding: 6px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -29px;
+    font-weight: 600;
+}
+
+.watch-details{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    
+}
+
+.watch-details small{
+    color: gray;
+}
