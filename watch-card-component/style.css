@@ -9,7 +9,7 @@ body{
 }
 
 main{
-    max-width: 456px;
+    max-width: 356px;
     margin: 80px auto;
 }
 
@@ -21,7 +21,7 @@ main{
 
 .watch-img{
     background-image: url("./img.png");
-    height: 20em;
+    height: 16em;
     background-size: cover;
     background-position: 60% center;
     position: relative;
