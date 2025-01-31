@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../Icons/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>WP - PUSHER</title>
 </head>
@@ -13,7 +14,8 @@
                 <h3>WP Pusher</h3>
             </div>
             <div class="navmenu">
-                <a href="">Download</a><a href="">Learn more</a><a href="">Pricing</a><a href="">Help</a><a href="">Account</a>
+                <a href="">Download</a><a href="">Learn more</a><a href="">Pricing</a><a href="">Help</a>
+                <a href="" class="active">Account</a>
             </div>
         </nav>
         <div class="contain">
@@ -21,14 +23,59 @@
                 <div class="mainspace">
                     <h2>Checkout</h2>
                     <hr>
-                    <h4><span class="cir-nm">1</span> Your Bank Information</h4>
+                    <h4><i class="bi bi-1-circle"></i> Your Bank Information</h4>
+                    <form>
+                        <label for="firstName">
+                            First Name
+                        </label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Jane">
+                            <label for="lastName">
+                                Last Name
+                            </label>
+                                <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                                <label for="E-mail">
+                                    E-mail
+                                </label>
+                                    <input type="email" required name="email" id="email" placeholder="janedoe@example.com">
+                                    <hr>
+                                    <h4><i class="bi bi-2-circle"></i>  Your Payment Information</h4>
+                    <label for="E-mail">
+                        E-mail
+                    </label>
+                        <input type="email" required name="email" id="email" placeholder="janedoe@example.com">
+                        <hr>
+                        <button class="btn">Buy WP Pusher</button>
+                    </form>
+
+                    <div class="info"><i class="bi bi-question-circle"></i> <b>Need any help?</b> Don't hesitate to contact support!</div>
+                    <div class="pw-stripe"><span>Powered by <b>Stripe</b></span></div>
                 </div>
                 <div class="sidebar">
-                    
+                    <h3>Freelancer</h3>
+                    <div class="amt">
+                        <span>99</span><sub>/ year</sub>
+                    </div>
+                    <em>Automatically renews after 1 year</em>
+                    <div class="desc">
+                        <p><i class="bi bi-check-circle"></i> Use on 5 client sites</p>
+                        <p><i class="bi bi-check-circle"></i> Private repositories</p>
+                        <p><i class="bi bi-check-circle"></i> Email support</p>
+                    </div>
+                    <div class="age-plan">
+                        <p>Need <b>20</b> client sites?</p>
+                        <a href="#">Switch to the Agency plan</a>
+                    </div>
+                    <hr>
+                    <div class="desc-two">
+                        <em>FTP is horrible to deal with. <b>WP Pusher</b> solves that issue, 
+                        and the customer support is awesome!</em>
+                    </div>
+                    <div class="profile">
+                        <b>Kirk Beard</b>
+                    </div>
                 </div>
         </div>
-        </div>
-        
+        </div>        
     </main>
 </body>
 </html>
