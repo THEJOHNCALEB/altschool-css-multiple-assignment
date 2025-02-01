@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link href="../Icons/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>WP - PUSHER</title>
@@ -11,7 +12,7 @@
     <main>
         <nav>
             <div class="logo">
-                <h3>WP Pusher</h3>
+                <img src="wppusher-logo copy.png" alt="logo" width="200" height="35">                    
             </div>
             <div class="navmenu">
                 <a href="">Download</a><a href="">Learn more</a><a href="">Pricing</a><a href="">Help</a>
@@ -23,37 +24,42 @@
                 <div class="mainspace">
                     <h2>Checkout</h2>
                     <hr>
-                    <h4><i class="bi bi-1-circle"></i> Your Bank Information</h4>
+                    <h4><i class="bi bi-1-circle"></i> Your Basic Information</h4>
                     <form>
-                        <label for="firstName">
-                            First Name
-                        </label>
-                            <input type="text" name="firstName" id="firstName" placeholder="Jane">
+                        <div class="row">
+                            <label for="firstName">
+                                First Name
+                                <input type="text" name="firstName" id="firstName" placeholder="Jane">
+                            </label>
                             <label for="lastName">
                                 Last Name
-                            </label>
                                 <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                            </label>
+                        </div>
                                 <label for="E-mail">
-                                    E-mail
+                                    E-mail<br>
+                                    <input class="mb3" type="email" required name="email" id="email" placeholder="janedoe@example.com">
                                 </label>
-                                    <input type="email" required name="email" id="email" placeholder="janedoe@example.com">
                                     <hr>
                                     <h4><i class="bi bi-2-circle"></i>  Your Payment Information</h4>
-                    <label for="E-mail">
-                        E-mail
+                    <label for="Credit Card">
+                        Credit Card<br>
+                        <div class="card-row">
+                            <input type="number" style="width: 65%;" required name="CreditCard" id="CreditCard" placeholder="Card Number">
+                            <input type="number" style="width: 20%;" placeholder="MM/YY  CCV">
+                            <input type="number" style="width: 15%;" placeholder="CVC">
+                        </div>
                     </label>
-                        <input type="email" required name="email" id="email" placeholder="janedoe@example.com">
                         <hr>
                         <button class="btn">Buy WP Pusher</button>
                     </form>
-
                     <div class="info"><i class="bi bi-question-circle"></i> <b>Need any help?</b> Don't hesitate to contact support!</div>
                     <div class="pw-stripe"><span>Powered by <b>Stripe</b></span></div>
                 </div>
                 <div class="sidebar">
                     <h3>Freelancer</h3>
                     <div class="amt">
-                        <span>99</span><sub>/ year</sub>
+                        <sup>$</sup><span>99</span><sub>/ year</sub>
                     </div>
                     <em>Automatically renews after 1 year</em>
                     <div class="desc">
@@ -63,18 +69,27 @@
                     </div>
                     <div class="age-plan">
                         <p>Need <b>20</b> client sites?</p>
+                        <br>
                         <a href="#">Switch to the Agency plan</a>
+                        <br>
+                        <br>
+                        <br>
                     </div>
                     <hr>
+                    <br>
                     <div class="desc-two">
                         <em>FTP is horrible to deal with. <b>WP Pusher</b> solves that issue, 
                         and the customer support is awesome!</em>
                     </div>
-                    <div class="profile">
+                    <div class="profile">                        
+                        <img src="image.png" alt="logo" width="40" height="40" style="border-radius: 50%;">
                         <b>Kirk Beard</b>
                     </div>
                 </div>
-        </div>
+            </div>
+            <div class="footer">
+                <span>&copy; 2018 WP Pusher IVS - Terms of Service</span>
+            </div>
         </div>        
     </main>
 </body>
