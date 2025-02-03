@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Gilroy Medium', sans-serif;
 }
@@ -13,7 +19,33 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px;
     justify-content: space-around;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .extralinks .nav-links{
@@ -43,7 +75,15 @@ a{
     margin-left: 8px;
 }
 
-.hero{
+main {
+    background-image: url('images/aurora.svg');
+    background-size: cover;
+    padding-bottom: 10px;
+    margin: 0;
+    background-position: center;
+}
+
+.hero{    
     max-width: 756px;
     margin: 70px auto;
 }
@@ -55,7 +95,7 @@ a{
 }
 
 .hero h2 span{    
-    color: rgb(0, 115, 255);
+    color: rgb(3, 97, 211);
 }
 
 .hero .hero-para{    
@@ -101,6 +141,184 @@ a{
     font-size: 32px;
 }
 
+.image-container{
+    display: grid;
+    justify-content: center;
+}
+
+.image-container-sm{
+    display: grid;
+    justify-content: center;
+    padding-left: 120px;
+}
+
+.metrics-stuff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #F9FBFD;
+    margin-top: 0;
+    padding: 40px 60px;
+    margin-bottom: 30px;
+}
+
+.metrics-stuff h3{
+    font-size: 30px;
+    line-height: 38px;
+}
+
+.metrics-stuff b{
+    font-size: 22px;
+}
+
+.why-us {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background-color: #fff;
+}
+
+.why-us-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.pricing-header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.why-us-content h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 4px solid;
+    border-image: linear-gradient(to bottom, #112232, #4D6B88) 1;
+}
+
+.why-us-content p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.pricing-header h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    border-left: 3px solid;
+    border-image: linear-gradient(to bottom, #112232, #4D6B88) 1;
+}
+
+.pricing-header p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.why-us-boxes {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    
+}
+
+.box i {    
+    color: #141414;
+    font-size: 18px;
+}
+
+.box .circle-sm{
+    background-color: #3284ff20;
+    padding: 15px;
+    border-radius: 50%;
+    height: 46px;
+    width: 46px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box h3 {
+    font-size: 20px;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+.payment-plans {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: #fff;
+}
+
+.plan-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: 1px solid #005AE2;
+    width: 379px;
+    height: 455px;
+    border-radius: 12px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.plan-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan-box ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.plan-box ul li i {
+    color: green;
+    margin-right: 10px;
+}
+
+.plan-box.standout {
+    background-color: #1E3448;
+    color: #fff;
+    padding: 60px 20px;
+    width: 410px;
+    height: 627px;
+}
+
 @media screen and (max-width: 565px) {
     .mobile-nav{
         display: block;
@@ -117,4 +335,11 @@ a{
     .nav-links{
         display: none;
     }
+
+    .metrics-stuff{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
 }
